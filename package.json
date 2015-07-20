@@ -1,0 +1,16 @@
+{
+  "name": "tzu",
+  "version": "0.9.0",
+  "description": "A pocket of mathematical operations in JavaScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "math",
+    "roman",
+    "mathematic"
+  ],
+  "author": "Raphael Amorim",
+  "license": "MIT"
+}
