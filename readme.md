@@ -12,7 +12,7 @@ $ npm install tzu
 
 ### romanize
 
-Convert decima number to **roman number**
+Convert arabic number to **roman number**
 
 ```javascript
 var tzu = require('tzu');
@@ -21,7 +21,7 @@ tzu.romanize('5053') // MMMMMLIII
 
 ### deromanize
 
-Convert roman number to **decimal number**
+Convert roman number to **arabic number**
 
 ```javascript
 var tzu = require('tzu');
@@ -29,6 +29,8 @@ tzu.deromanize('MLVII') // 1057
 ```
 
 ## About
+
+This module is a tribute to Sun Tzu.
 
 ### Algorithms References
 
