@@ -52,6 +52,17 @@ function Tzu() {
     }
     return arabic;
   }
+
+  /*  @name: persianize
+      @outputExample: (persianize(16) === ۱۶) // true 
+  */
+  this.persianize = function(persian) {    
+    var id = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
+    persian = persian.toString();
+    return persian.replace(/[0-9]/g, function(w){
+      return id[+w]
+    });
+  }
 }
 
 module.exports = new Tzu();

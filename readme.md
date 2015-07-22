@@ -12,7 +12,7 @@ $ npm install tzu
 
 ### romanize
 
-Convert arabic number to **roman number**
+Convert modern number to **roman number**
 
 ```javascript
 var tzu = require('tzu');
@@ -21,11 +21,20 @@ tzu.romanize('5053'); // MMMMMLIII
 
 ### deromanize
 
-Convert roman number to **arabic number**
+Convert roman number to **modern number**
 
 ```javascript
 var tzu = require('tzu');
 tzu.deromanize('MLVII'); // 1057
+```
+
+### persianize
+
+Convert modern number to **persian number**
+
+```javascript
+var tzu = require('tzu');
+tzu.deromanize(19); // ۱۹
 ```
 
 ### range
