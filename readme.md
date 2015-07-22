@@ -34,7 +34,7 @@ Convert modern number to **persian number**
 
 ```javascript
 var tzu = require('tzu');
-tzu.deromanize(19); // ۱۹
+tzu.persianize(19); // ۱۹
 ```
 
 ### range
