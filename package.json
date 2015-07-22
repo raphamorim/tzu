@@ -1,7 +1,7 @@
 {
   "name": "tzu",
   "version": "0.9.1",
-  "description": "A pocket of mathematical operations in JavaScript",
+  "description": "A pocket of mathematical converters and operations in JavaScript",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
