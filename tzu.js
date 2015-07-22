@@ -1,14 +1,4 @@
 function Tzu() {
-  
-  /*  @name: range
-      @outputExample: (range(5, 3) === [5,6,7]) // true 
-  */
-  this.range = function(start, count) {
-    return Array.apply(0, Array(count))
-      .map(function (element, index) { 
-        return index + start;  
-      });
-  }
 
   /*  @name: romanize
       @outputExample: (romanize(5) === 'V') // true 

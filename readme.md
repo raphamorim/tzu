@@ -1,6 +1,6 @@
 # Tzu.js
 
-A pocket of mathematical converters and operations in JavaScript
+The belt of number conversion for nodejs
 
 ## Install
 
@@ -10,9 +10,7 @@ $ npm install tzu
 
 ## Usage
 
-### Converter Methods
-
-#### romanize
+### romanize
 
 Convert modern number to **roman number**
 
@@ -21,7 +19,7 @@ var tzu = require('tzu');
 tzu.romanize('5053'); // MMMMMLIII
 ```
 
-#### deromanize
+### deromanize
 
 Convert roman number to **modern number**
 
@@ -30,24 +28,13 @@ var tzu = require('tzu');
 tzu.deromanize('MLVII'); // 1057
 ```
 
-#### persianize
+### persianize
 
 Convert modern number to **persian number**
 
 ```javascript
 var tzu = require('tzu');
 tzu.persianize(19); // ۱۹
-```
-
-### Operations Methods
-
-#### range
-
-Built-in function to generate array ranges.
-
-```javascript
-var tzu = require('tzu');
-tzu.range(5, 3); // [5,6,7] 
 ```
 
 ## About

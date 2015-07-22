@@ -1,7 +1,7 @@
 {
   "name": "tzu",
-  "version": "0.9.1",
-  "description": "A pocket of mathematical converters and operations in JavaScript",
+  "version": "0.9.2",
+  "description": "The belt of number conversion for nodejs",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
@@ -9,6 +9,8 @@
   "keywords": [
     "math",
     "roman",
+    "conversion",
+    "converter",
     "mathematic",
     "persian",
     "number"
