@@ -10,6 +10,15 @@ $ npm install tzu
 
 ## Usage
 
+### toWords
+
+Convert modern number into **words**
+
+```javascript
+var tzu = require('tzu');
+tzu.toWords(10234); // 'ten thousand two hundred thirty four'
+```
+
 ### romanize
 
 Convert modern number to **roman number**
