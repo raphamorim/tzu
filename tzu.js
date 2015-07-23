@@ -3,10 +3,10 @@ function Tzu() {
   /*  @name: romanize
       @outputExample: (romanize(5) === 'V') // true 
   */
-  this.romanize = function(number) {
-    if (!+number)
+  this.romanize = function(modern) {
+    if (!+modern)
       return false;
-    var digits = String(+number).split(""),
+    var digits = String(+modern).split(""),
       key = ["", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM",
         "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC",
         "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"
@@ -44,15 +44,28 @@ function Tzu() {
   }
 
   /*  @name: persianize
-      @outputExample: (persianize(16) === ۱۶) // true 
+      @outputExample: (persianize(16) === '۱۶') // true 
   */
-  this.persianize = function(persian) {    
-    var id = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
-    persian = persian.toString();
-    return persian.replace(/[0-9]/g, function(w){
-      return id[+w]
+  this.persianize = function(modern) {    
+    var persian = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'];
+    modern = modern.toString();
+    return modern.replace(/[0-9]/g, function(w){
+      return persian[+w]
     });
   }
+
+  /*  @name: depersianize
+      @outputExample: (persianize('۱') === 1) // true 
+  */
+  this.depersianize = function(persian) {    
+    var id = ['۰','۱','۲','۳','۴','۵','۶','۷','۸','۹'],
+        modern = '';
+    for (var i = 0, len = persian.length; i < len; i++) {
+      modern += (id.indexOf(persian[i]) || '');
+    }
+    return modern;
+  }
+
 }
 
 module.exports = new Tzu();
