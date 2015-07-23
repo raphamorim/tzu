@@ -52,7 +52,7 @@ Convert persian number to **modern number**
 
 ```javascript
 var tzu = require('tzu');
-tzu.persianize('۱'); // 1
+tzu.depersianize('۱'); // 1
 ```
 
 ## About
