@@ -37,6 +37,15 @@ var tzu = require('tzu');
 tzu.persianize(19); // ۱۹
 ```
 
+### depersianize
+
+Convert persian number to **modern number**
+
+```javascript
+var tzu = require('tzu');
+tzu.persianize('۱'); // 1
+```
+
 ## About
 
 This module is a tribute to Sun Tzu.
