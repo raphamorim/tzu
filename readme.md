@@ -1,6 +1,7 @@
 # Tzu.js
 
-The belt of number conversion for nodejs
+The belt of number conversion for nodejs.
+[Web demo](http://raphamorim.com/tzu/doc/webdemo.html)
 
 ## Install
 

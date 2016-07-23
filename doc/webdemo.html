@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Web demo for Tzu.js, the belt of number conversion.</title>
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+</head><body>
+
+<form action="none://" method="get" style="margin: 5em;">
+<h2>Web demo for <a href="https://github.com/raphamorim/tzu"
+  >Tzu.js</a>, the belt of number conversion.</h2>
+<p>Some number: <input type="text" id="orig" size="30"
+  value="123" style="text-align: right; padding-right: 1em;" />
+  <select id="mthd" size="4">
+    <option>Failedt to</option>
+    <option>detect</option>
+    <option>available</option>
+    <option>methods</option>
+  </select>
+  <input type="submit" value="convert" /></p>
+<p id="results">(Results should be showing here if JavaScript is enabled.)</p>
+<p style="font-size: 70%; opacity: 0.4; margin-top: 10em; text-align: right;"
+  >Demo contributed by <a href="https://github.com/mk-pmb/">@mk-pmb</a>,
+  2016<!-- based on the one from <tt>temp-units-conv-node</tt> -->.</p>
+</form>
+
+<script>window.module = { exports: {} };</script>
+<script src="../tzu.js"></script>
+<script src="webdemo.js"></script>
+
+</body></html>
